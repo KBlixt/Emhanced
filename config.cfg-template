@@ -2,8 +2,7 @@
 TMDB_API_KEY =
 
 [MOVIES_SETTINGS]
-    MOVIE_LIBRARY = \\BULBASAUR\Plex library\Filmer
-
+    MOVIE_LIBRARY =
 
     # Here you can control the settings for each individual category
     # the "COUNT" parameter specifies how manny movies from each category will be modified

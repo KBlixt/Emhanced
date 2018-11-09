@@ -7,7 +7,7 @@ from datetime import timedelta
 
 
 def get_movies(movie_library_dir):
-
+    print('Reading nfo files, this could take a few minutes.')
     items = list()
 
     for movie_folder in os.listdir(movie_library_dir):

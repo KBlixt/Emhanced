@@ -79,4 +79,7 @@ the changes 5 minutes should be enough but this will vary from system to system,
 long it takes to complete and then double it as a delay just to be safe. Rebooting should do this as well if you choose
 to do that instead.
 
+# Suggestions
 
+The script is fairly easy to modify and if there are any other feature suggestions they should be fairly quick to
+implement. Just open an issue in this repository and I'll have a look at it. Or pm me on reddit /u/waraxx

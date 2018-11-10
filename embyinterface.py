@@ -43,6 +43,8 @@ def get_movies(movie_library_dir):
                     item['tmdbid'] = line
 
             items.append(item)
+        if len(items) > 20:
+            break
 
     return items
 

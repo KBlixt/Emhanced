@@ -35,6 +35,3 @@
     [RANDOM]
         COUNT = 1
         ORDER = 4
-
-[TV_SHOWS_SETTINGS]
-    ENABLED = true

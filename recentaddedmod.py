@@ -102,7 +102,8 @@ def hidden_gem(items, maximum, api_key):
 
     for item in items[:2 + 6 * maximum]:
         tmdb_data = get_tmdb_details_data('en-US', api_key, item['tmdbid'])
-
+        if tmdb_data is None:
+            continue
         item['adjusted_popularity'] = float(tmdb_data['popularity']) * \
                                            (1.05 ** ((date.today() - timedelta(days=1095)).year -
                                                      item['releasedate'].year)) * \

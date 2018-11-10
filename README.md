@@ -24,7 +24,8 @@ python3 Emhanced/emhanced.py
 
 #### Other
 
-it really shouldn't be more diffecult than clone, configure the config and run it with python3. 
+it really shouldn't be more diffecult than clone, configure the config and run it with python3. IF you run into issues,
+please let me know.
   
 # Setting up the config
 
@@ -64,5 +65,17 @@ This category will provide a completely random movie
 
 # Automation
 
+cron example with the script running at 10:30 every day:
+```
+30 10 * * * /opt/Emhanced/emhanced.py
+```
+
+Runnig it on any kind of schedualer should work fine however. but be aware of that if you have the live monitoring option 
+enabled on the library it will scan for new and changed files once for every movie this script edits. Either disable 
+this or restart the server after the script have finished. 
+
+you'll need to scheadule a library scan for a few minutes after this script has been run in order for emby to recognize 
+the changes 5 minutes should be enough but this will vary from system to system, I'd recomend running it once and see how 
+much time it takes and then double it as a delay just to be safe. a emby server reboot should do this as well if you do this.
 
 

@@ -82,4 +82,4 @@ to do that instead.
 # Feature suggestions
 
 The script is fairly easy to modify and if there are any other feature suggestions they should be fairly quick to
-implement. Just open an issue in this repository and I'll have a look at it. Or pm me on reddit /u/waraxx
+implement. Just open an issue in this repository and I'll have a look at it. Or pm me on Reddit @/u/waraxx

@@ -23,7 +23,7 @@ python3 Emhanced/emhanced.py
 # Setting up the config
 
 For the script to work you'll need to provide a path to your movie library to the MOVIE_LIBRARY variable. You need
-to have all of your movie folders in the same folder for this script to work. All of your movies must be reachable
+to have all of your movie folders in the same folder for this script to work. All of your *movie folders* must be reachable
 with something like "/path/to/library/movies/Avatar (2009)". In this example you'd provide the
 path "/path/to/library/movies" to the script.
 

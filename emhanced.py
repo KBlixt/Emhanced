@@ -14,8 +14,6 @@ cfg = configparser.ConfigParser()
 cfg.read(configfile)
 config = cfg['GENERAL_SETTINGS']
 
-# if len(api_key) < 5:
-#     print('No TMDB API key provided.')
 api_key = config.get('tmdb_api_key', '')
 mod_list = list()
 

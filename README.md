@@ -8,11 +8,17 @@ for more info.
 # Installation
 
 Clone the repository.
-    git clone https://github.com/KBlixt/Emhanced
+```
+git clone https://github.com/KBlixt/Emhanced
+```
 Edit the "config.cfg-template" to your liking and save it as "config.cfg". Read the config section for setting it up correctly.
-    nano Emhanced/config.cfg-template
+```
+nano Emhanced/config.cfg-template
+```
 Then you are done and can run it with python3.
-    python3 Emhanced/emhanced.py
+```
+python3 Emhanced/emhanced.py
+```
     
 # Setting up the config
 

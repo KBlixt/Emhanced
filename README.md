@@ -5,7 +5,9 @@ is a more useful homepage with the Recently added movie tab showing a mix of rec
 few random movies that have been selected out of your movies for various reasons. Read the categories section
 for more info.
 
-# Installation
+# Installation (Linux)
+
+### Linux
 
 Clone the repository.
 ```
@@ -19,7 +21,11 @@ Then you are done and can run it with python3.
 ```
 python3 Emhanced/emhanced.py
 ```
-    
+
+#### Other
+
+it really shouldn't be more diffecult than clone, configure the config and run it with python3. 
+  
 # Setting up the config
 
 For the script to work you'll need to provide a path to your movie library to the MOVIE_LIBRARY variable. You need
@@ -55,4 +61,8 @@ This category will provide a random movie that isn't popular on tmdb and will en
 ### random
 
 This category will provide a completely random movie
+
+# Automation
+
+
 

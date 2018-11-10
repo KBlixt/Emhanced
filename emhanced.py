@@ -4,6 +4,9 @@ import recentaddedmod as recent
 from random import shuffle
 import embyinterface as database
 import sys
+import time
+import math
+start = time.time()
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 configfile = 'config.cfg'
@@ -72,4 +75,7 @@ except ValueError:
     print('COUNT: only whole numbers')
 
 database.edit_database(mod_list)
-print('done')
+end = time.time()
+print("----End of script----")
+print("Script completed in " + str(math.floor(int(end - start)/60)) + " minute(s) and " +
+      str(int(end - start) % 60) + " second(s).")

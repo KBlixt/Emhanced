@@ -20,7 +20,8 @@ def get_movies(movie_library_dir):
                     nfo = file.read()
                     item['nfo_file'] = filename
                 except UnicodeDecodeError:
-                    print('something went wrong reading the nfo file of "' + filename + '".')
+                    print('Something went wrong reading the nfo file of "' + filename + '"')
+                    print('Skipping that file')
                     continue
 
             nfo = nfo.split('\n')
@@ -43,8 +44,6 @@ def get_movies(movie_library_dir):
                     item['tmdbid'] = line
 
             items.append(item)
-        if len(items) > 20:
-            break
 
     return items
 

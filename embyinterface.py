@@ -24,7 +24,7 @@ def get_movies(movie_library_dir):
                     print('Skipping that file')
                     continue
 
-            append = 4
+            append = 3
             nfo = nfo.split('\n')
             for line in nfo:
                 if '<releasedate>' in line:
@@ -40,7 +40,6 @@ def get_movies(movie_library_dir):
                 elif '<criticrating>' in line:
                     line = line.replace('<criticrating>', '').replace('</criticrating>', '')
                     item['criticrating'] = float(line)
-                    append -= 1
 
                 elif '<tmdbid>' in line:
                     line = line.replace('<tmdbid>', '').replace('</tmdbid>', '').strip()

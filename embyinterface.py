@@ -48,6 +48,9 @@ def get_movies(movie_library_dir):
                     append -= 1
             if append == 0:
                 items.append(item)
+            else:
+                print('Missing data in nfo file of "' + filename + '"')
+                print('Skipping that file')
 
     return items
 

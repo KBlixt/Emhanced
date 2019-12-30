@@ -5,6 +5,7 @@ from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
 from _socket import timeout
 import time
+from random import shuffle
 
 
 def get_tmdb_details_data(lang, api_key, tmdb_id):
@@ -58,6 +59,7 @@ def retrieve_web_page(url, page_name='page'):
 
 
 def recent_releases(items, minimum, maximum, day_limit):
+    items.sort(key=lambda x: x['releasedate'], reverse=True)
     local_mod_list = list()
     count = 0
     most_recent_date = items[0]['releasedate']
@@ -80,6 +82,7 @@ def recent_releases(items, minimum, maximum, day_limit):
 
 
 def old_but_gold(items, maximum, age_limit, score_limit):
+    shuffle(items)
     local_mod_list = list()
     count = 0
     for item in items:
@@ -98,6 +101,7 @@ def old_but_gold(items, maximum, age_limit, score_limit):
 
 
 def hidden_gem(items, maximum, api_key):
+    shuffle(items)
     local_mod_list = list()
 
     for item in items[:2 + 6 * maximum]:
@@ -119,6 +123,7 @@ def hidden_gem(items, maximum, api_key):
 
 
 def random(items, maximum):
+    shuffle(items)
     local_mod_list = list()
 
     for item in items[:maximum]:

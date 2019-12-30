@@ -7,7 +7,7 @@ from datetime import timedelta
 
 
 def get_movies(movie_library_dir):
-    print('Reading nfo files, this could take a few minutes.')
+    print('Loading nfo files, this could take a few minutes.')
     items = list()
 
     for movie_folder in os.listdir(movie_library_dir):
@@ -51,6 +51,7 @@ def get_movies(movie_library_dir):
                 print('Missing data in nfo file of "' + filename + '"')
                 print('Skipping that file')
 
+    print('Loaded ' + str(len(items)) + ' nfo files.')
     return items
 
 

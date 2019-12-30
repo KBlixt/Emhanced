@@ -1,7 +1,6 @@
 import os
 import configparser
 import recentaddedmod as recent
-from random import shuffle
 import embyinterface as database
 import sys
 import time
@@ -24,8 +23,11 @@ else:
     print('Invalid movie library. not a directory.')
     sys.exit()
 
+if len(movies) < 1:
+    print('No nfo files loaded. please make sure the library path is correct.')
+    print('Aborting script.')
+    sys.exit(0)
 
-movies.sort(key=lambda x: x['releasedate'], reverse=True)
 try:
     config = cfg['RECENT_RELEASES']
     if config.getint('MAX_COUNT', 7) > 0:
@@ -40,7 +42,6 @@ except ValueError:
     print('ORDER: only numbers')
     print('DAY_LIMIT: only numbers')
 
-shuffle(movies)
 try:
     config = cfg['OLD_BUT_GOLD']
     if config.getint('COUNT', 1) > 0:
